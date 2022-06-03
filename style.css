@@ -12,7 +12,7 @@
 main {
     width: 1450px;
 
-    background-image: url('/intro-component-with-signup-form-master/images/bg-intro-desktop.png');
+    background-image: url('bg-intro-desktop.png');
     background-color: hsl(0deg 100% 74%);
     margin: 0px;
     padding: 0px;
@@ -129,7 +129,7 @@ strong {
         justify-content: center;
         align-items: center;
         background-color: hsl(249, 10%, 26%);
-        background-image: url("/intro-component-with-signup-form-master/images/bg-intro-mobile.png");
+        background-image: url("bg-intro-mobile.png");
 
     }
 
