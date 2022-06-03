@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<HTML lang="EN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <main class="flex">
+    <div class="left">
+      <p id="head">Learn to code by watching others</p>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <!-- form -->
+
+    <form class="right" autocomplete="off">
+      <div><input type="button" class="but" id="enter2" value="Try it free 7 days then $20/mo. thereafter"></div>
+
+      <div class="box2">
+        <div>
+          <input class="input" id="fname" name="firstname" type="text" placeholder="First Name">
+          <div class="error" id="name"></div>
+        </div>
+        <div>
+          <input class="input" id="lname" type="text" placeholder=" Last Name">
+          <div class="error" id="tname"></div>
+        </div>
+        <div>
+          <input class="input" id="ename" type="email" placeholder="  Email Address">
+          <div class="error" id="email"></div>
+        </div>
+        <div>
+          <input class="input" type="password" autocomplete="off" id="current-password" placeholder="Password">
+          <div class="error" id="pass"></div>
+        </div>
+        <div>
+          <input class="but" type="button" id="enter" value="Claim your free trial" onclick=check()>
+        </div>
+        <footer>
+          <label>By clicking the button, you are agreeing to our <strong> Terms and Services</strong> </label>
+        </footer>
+      </div>
+      <script>
+        
+function check() {
+    let name = document.getElementById("fname").value;
+    if (name == '') {
+      document.getElementById("name").innerHTML = "first name cannot be empty";
+    }
+    // first inpput
+    let name1 = document.getElementById("lname").value;
+    if (name1 == '') {
+      document.getElementById("tname").innerHTML = "last name cannot be empty";
+    }
+    // second input
+
+    let name2 = document.getElementById("ename").value;
+    if (name2 == '') {
+      document.getElementById("email").innerHTML = "Look like this is not email";
+    }
+    // third input
+    let name3 = document.getElementById("current-password").value;
+    if (name3 == '') {
+      document.getElementById("pass").innerHTML = "first name cannot be empty";
+    }
+    // fouth input
+    let name4 = document.getElementById("fname").value;
+    if (name4 == '') {
+      document.getElementById("name").innerHTML = "password cannot be empty";
+    }
+
+  }
+
+      </script>
+      </div>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+main {
+    width: 1450px;
+
+    background-image: url('/intro-component-with-signup-form-master/images/bg-intro-desktop.png');
+    background-color: hsl(0deg 100% 74%);
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+/* startingo of left side */
+.left {
+    width: 50%;
+    margin: 23% 6%;
+    font-family: sans-serif;
+    color: white;
+}
+
+.right {
+    width: 50%;
+}
+
+#head {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+p {
+    font-size: 21px;
+    margin-top: 0px;
+}
+
+/* end of left side */
+/* start for right side */
+.right {
+    margin: 11% 6% 16% 4%;
+    font-family: sans-serif;
+    color: white;
+}
+
+.input {
+    width: 81%;
+    margin: 3% 7%;
+    height: 48px;
+    border-radius: 8px;
+    padding-left: 26px;
+    border: 1px solid #888484;
+}
+
+.but {
+    width: 86%;
+    margin: 2% 7%;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+}
+
+.error {
+    text-align: end;
+    padding-right: 43px;
+    font-style: italic;
+    padding-bottom: 2%;
+    color: rgb(244, 58, 58);
+}
+
+label {
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-bottom: 8%;
+    margin-top: 8px;
+    color: #807b7b;
+}
+
+#enter {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    box-shadow: 0px 5px hsl(154deg 36% 52%);
+    background-color: hsl(154deg 65% 68%);
+    color: white;
+    font-weight: bold;
+}
+
+#enter2 {
+    font-size: 1.1em;
+    text-transform: capitalize;
+    background-color: hsl(247deg 32% 48%);
+    color: white;
+    font-weight: bold;
+}
+
+strong {
+    color: red;
+}
+
+.box2 {
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 1px;
+    height: 91%;
+}
+
+#fname {
+    margin-top: 31px;
+}
+
+@media screen and (max-width:700px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(249, 10%, 26%);
+        background-image: url("/intro-component-with-signup-form-master/images/bg-intro-mobile.png");
+
+    }
+
+    #head {
+        font-weight: bold;
+        font-size: 5em;
+    }
+    p {
+        font-size: 35px;
+    }
+    .left{
+        margin: 12% 9% 2% 9%;
+    }
+    
+}
